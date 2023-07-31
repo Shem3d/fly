@@ -24,11 +24,11 @@ Frame.Size = UDim2.new(0, 190, 0, 57)
 
 up.Name = "up"
 up.Parent = Frame
-up.BackgroundColor3 = Color3.fromRGB(13,13,13)
+up.BackgroundColor3 = Color3.fromRGB(0,0,0)
 up.Size = UDim2.new(0, 44, 0, 28)
 up.Font = Enum.Font.SourceSans
 up.Text = "Up"
-up.TextColor3 = Color3.fromRGB(0, 0, 0)
+up.TextColor3 = Color3.fromRGB(255,255,255)
 up.TextSize = 14.000 
 
 down.Name = "down"
@@ -43,86 +43,89 @@ down.TextSize = 14.000
 
 onof.Name = "onof"
 onof.Parent = Frame
-onof.BackgroundColor3 = Color3.fromRGB (13,13,13)
+onof.BackgroundColor3 = Color3.fromRGB (0,0,0)
 onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
 onof.Size = UDim2.new(0, 56, 0, 28)
 onof.Font = Enum.Font.SourceSans
 onof.Text = "Fly / Unfly"
-onof.TextColor3 = Color3.fromRGB(255, 3, 3)
+onof.TextColor3 = Color3.fromRGB(255,255,255)
 onof.TextSize = 14.000 
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(128,128,128)
+TextLabel.BackgroundColor3 = Color3.fromRGB(0,0,0)
 TextLabel.Position = UDim2.new(0.469327301, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 100, 0, 28)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Fly GUI"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(255,255,255
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true 
 
 plus.Name = "plus"
 plus.Parent = Frame
-plus.BackgroundColor3 = Color3.fromRGB(128,128,128)
+plus.BackgroundColor3 = Color3.fromRGB(0,0,0)
 plus.Position = UDim2.new(0.231578946, 0, 0, 0)
 plus.Size = UDim2.new(0, 45, 0, 28)
 plus.Font = Enum.Font.SourceSans
 plus.Text = "+"
-plus.TextColor3 = Color3.fromRGB(0, 0, 0)
+plus.TextColor3 = Color3.fromRGB(255,255,255)
 plus.TextScaled = true
 plus.TextSize = 14.000
 plus.TextWrapped = true 
 
 speed.Name = "speed"
 speed.Parent = Frame
-speed.BackgroundColor3 = Color3.fromRGB(128,128,128)
+speed.BackgroundColor3 = Color3.fromRGB(0,0,0)
 speed.Position = UDim2.new(0.468421042, 0, 0.491228074, 0)
 speed.Size = UDim2.new(0, 44, 0, 28)
 speed.Font = Enum.Font.SourceSans
 speed.Text = "1"
-speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextColor3 = Color3.fromRGB(255,255,255)
 speed.TextScaled = true
 speed.TextSize = 14.000
 speed.TextWrapped = true 
 
 mine.Name = "mine"
 mine.Parent = Frame
-mine.BackgroundColor3 = Color3.fromRGB(128,128,128)
+mine.BackgroundColor3 = Color3.fromRGB(0,0,0)
 mine.Position = UDim2.new(0.231578946, 0, 0.491228074, 0)
 mine.Size = UDim2.new(0, 45, 0, 29)
 mine.Font = Enum.Font.SourceSans
 mine.Text = "-"
-mine.TextColor3 = Color3.fromRGB(0, 0, 0)
+mine.TextColor3 = Color3.fromRGB(255,255,255)
 mine.TextScaled = true
 mine.TextSize = 14.000
 mine.TextWrapped = true 
 
 closebutton.Name = "Close"
 closebutton.Parent = main.Frame
-closebutton.BackgroundColor3 = Color3.fromRGB(128,128,128)
+closebutton.BackgroundColor3 = Color3.fromRGB(0,0,0)
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 28)
 closebutton.Text = "X"
+closebutton.TextColor3 = Color3.fromRGB(255,255,255)
 closebutton.TextSize = 30
 closebutton.Position = UDim2.new(0, 0, -1, 27) 
 
 mini.Name = "minimize"
 mini.Parent = main.Frame
-mini.BackgroundColor3 = Color3.fromRGB(128,128,128)
+mini.BackgroundColor3 = Color3.fromRGB(0,0,0)
 mini.Font = "SourceSans"
 mini.Size = UDim2.new(0, 45, 0, 28)
 mini.Text = "-"
+mini.TextColor3 = Color3.fromRGB(255,255,255)
 mini.TextSize = 40
 mini.Position = UDim2.new(0, 44, -1, 27) 
 
 mini2.Name = "minimize2"
 mini2.Parent = main.Frame
-mini2.BackgroundColor3 = Color3.fromRGB(128,128,128)
+mini2.BackgroundColor3 = Color3.fromRGB(0,0,0)
 mini2.Font = "SourceSans"
 mini2.Size = UDim2.new(0, 45, 0, 28)
 mini2.Text = "+"
 mini2.TextSize = 40
+mini2.TextColor3 = Color3.fromRGB(255,255,255)
 mini2.Position = UDim2.new(0, 44, -1, 57)
 mini2.Visible = false 
 
@@ -134,12 +137,6 @@ local chr = game.Players.LocalPlayer.Character
 local hum = chr and chr:FindFirstChildWhichIsA("Humanoid") 
 
 nowe = false 
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "Fly GUI";
-Text = "Created By 30xMkzZ";
-Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 3; 
 
 Frame.Active = true -- main = gui
 Frame.Draggable = true 
@@ -414,7 +411,7 @@ end
 end)
 mine.MouseButton1Down:connect(function()
 if speeds == 1 then
-speed.Text = 'Cannot Be Less Than 1'
+speed.Text = 'Can't Be Less Than 1'
 wait(1)
 speed.Text = speeds
 else
