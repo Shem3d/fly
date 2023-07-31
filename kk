@@ -17,38 +17,38 @@ main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.ResetOnSpawn = false 
 
 Frame.Parent = main
-Frame.BackgroundColor3 = Color3.fromRGB(13,13,13)
-Frame.BorderColor3 = Color3.fromRGB(128,128,128)
+Frame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Frame.BorderColor3 = Color3.fromRGB(0,0,0)
 Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
 Frame.Size = UDim2.new(0, 190, 0, 57) 
 
 up.Name = "up"
 up.Parent = Frame
-up.BackgroundColor3 = Color3.fromRGB(128,128,128)
+up.BackgroundColor3 = Color3.fromRGB(13,13,13)
 up.Size = UDim2.new(0, 44, 0, 28)
 up.Font = Enum.Font.SourceSans
-up.Text = "UP"
+up.Text = "Up"
 up.TextColor3 = Color3.fromRGB(0, 0, 0)
 up.TextSize = 14.000 
 
 down.Name = "down"
 down.Parent = Frame
-down.BackgroundColor3 = Color3.fromRGB(128,128,128)
+down.BackgroundColor3 = Color3.fromRGB(13,13,13)
 down.Position = UDim2.new(0, 0, 0.491228074, 0)
 down.Size = UDim2.new(0, 44, 0, 28)
 down.Font = Enum.Font.SourceSans
-down.Text = "DOWN"
+down.Text = "Down"
 down.TextColor3 = Color3.fromRGB(0, 0, 0)
 down.TextSize = 14.000 
 
 onof.Name = "onof"
 onof.Parent = Frame
-onof.BackgroundColor3 = Color3.fromRGB (128,128,128)
+onof.BackgroundColor3 = Color3.fromRGB (13,13,13)
 onof.Position = UDim2.new(0.702823281, 0, 0.491228074, 0)
 onof.Size = UDim2.new(0, 56, 0, 28)
 onof.Font = Enum.Font.SourceSans
-onof.Text = "FLY"
-onof.TextColor3 = Color3.fromRGB(0, 0, 0)
+onof.Text = "Fly / Unfly"
+onof.TextColor3 = Color3.fromRGB(255, 3, 3)
 onof.TextSize = 14.000 
 
 TextLabel.Parent = Frame
